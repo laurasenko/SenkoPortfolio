@@ -4,7 +4,16 @@
   <title>Contact</title>
   <link href="../css/styles.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"/>
-  
+  <script language="JavaScript">
+  function bold(id) {
+    if (document.getElementById) {
+      document.getElementById(id).style.fontWeight = 'bold';
+    }
+    else if (document.all) {
+      document.all[id].style.fontWeight = 'bold';
+    }
+  }
+  </script>
   </head>
 
   <body>
@@ -24,12 +33,12 @@
       <br />
       <label class="label">
       Phone:
-          <input type ="text" name="phone" size="30" maxlength="100">
+          <input type ="text" name="phone" size="30" maxlength="100" id="phone">
         </label>
         <br />
         <label class="label">
       Email:
-        <input type ="email" name="email" size="30" maxlength="100">
+        <input type ="email" name="email" size="30" maxlength="100" id="email">
       </label>
       <br /> <br />
       <label class="label">
@@ -42,6 +51,12 @@
 
    <input type="submit" id="submit" value="Send"  />
 
+   <p>
+   Click the button below to make the text in the comments field <b>bold</b>.
+   </p>
+   <form>
+   <input type="button" value="Bold" onClick="bold('comments')">
+   </form>
 
     </fieldset>
 
@@ -50,9 +65,9 @@
 
   <div class ="nav">
   <ul>
-    <li><a href="pages/about.html">About</a></li>
+    <li><a href="../pages/about.html">About</a></li>
     <li><a href="pages/contact.html">Contact</a></li>
-    <li><a href="FirstDeliverableSenko.html">Home</a></li>
+    <li><a href="../SecondDeliverableSenko.html">Home</a></li>
   </ul>
   </div>
 
