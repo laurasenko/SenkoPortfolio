@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Contact</title>
+  <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"/>
+  <script language="JavaScript">
+  function bold(id) {
+    if (document.getElementById) {
+      document.getElementById(id).style.fontWeight = 'bold';
+    }
+    else if (document.all) {
+      document.all[id].style.fontWeight = 'bold';
+    }
+  }
+  </script>
+  </head>
+
+  <body>
+  <header>
+      <h1>Contact Form</h1>
+  </header>
+  <form action="http://example.com/review.php" method="get">
+
+  <div id="contact">
+    <fieldset>
+      <legend class="label">
+      Your Contact Info:
+    </legend>
+      <label class="label">
+      Name:
+        <input type ="text" name="name" size="30" maxlength="100" id="name">
+      </label>
+      <br />
+      <label class="label">
+      Phone:
+          <input type ="text" name="phone" size="30" maxlength="100" id="phone">
+        </label>
+        <br />
+        <label class="label">
+      Email:
+        <input type ="email" name="email" required placeholder="Enter a valid email address" size="30" maxlength="100" id="email">
+      </label>
+      <br /> <br />
+      <label class="label">
+    Comments:
+  </label="label">
+    <br />
+    <textarea rows="4" cols="40" id="comments">
+    </textarea
+    </p>
+
+   <input type="submit" id="submit" value="Send"  />
+
+   <p>
+   Click the button below to make the text in the comments field <b>bold</b>.
+   </p>
+   <form>
+   <input type="button" value="Bold" onClick="bold('comments')">
+   </form>
+
+    </fieldset>
+
+  </form>
+</div>
+
+  <nav class ="nav">
+  <ul>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+    <li><a href="../SecondDeliverableSenko.html">Home</a></li>
+  </ul>
+</nav>
+
+
+  </body>
+</html>
